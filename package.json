@@ -1,0 +1,35 @@
+{
+  "name": "doodle-cut",
+  "version": "0.1.0",
+  "description": "A 30-second hand-drawn video-editor animation, written entirely in code with Remotion — visuals, music and sound effects included.",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "keywords": [
+    "remotion",
+    "animation",
+    "motion-graphics",
+    "procedural-audio",
+    "react",
+    "video"
+  ],
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "audio": "node audio/synth.mjs",
+    "render": "npm run audio && remotion render src/index.ts Demo out/demo.mp4",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.529",
+    "@remotion/google-fonts": "^4.0.529",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "remotion": "^4.0.529"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.3",
+    "@types/react": "^19.3.0",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.2"
+  }
+}

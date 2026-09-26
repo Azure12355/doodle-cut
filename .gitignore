@@ -1,0 +1,8 @@
+node_modules/
+out/
+# 由 `npm run audio` 生成
+public/audio/
+*.mp4
+*.m4a
+*.wav
+.DS_Store
